@@ -1,0 +1,305 @@
+/* 1ST ROW */
+.one {
+	background-color: #404040;
+}
+
+.mt {
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.one h5 {
+	color: white;
+	margin-left: 20px;
+	display: inline;
+}
+
+.one a {
+	margin-left: 10px;
+	margin-top: 4px;
+	display: inline;
+}
+
+.btn {
+	color: white;
+}
+/* 2ND ROW */
+.two img {
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.prodform label {
+	font-size: 09pt;
+	font-weight: lighter;
+}
+
+.form1 {
+	border: 2px solid #eee;
+	padding: 10px;
+	width: 100%;
+}
+
+.two ul {
+	margin-top: 10px;
+}
+
+.two h4 {
+	margin-left: 80px;
+}
+
+.two a {
+	color: #404040;
+	font-size: 15px;
+}
+
+#rol2col2 {
+	margin-top: 10px;
+	margin-left: 80px;
+	color: #404040;
+	float: right;
+}
+
+#row2image {
+	margin-top: 30px;
+	margin-left: 20px;
+}
+
+/*3RD ROW*/
+.three {
+	background: url("../images/texture-bw.png");
+	margin-top: 15px;
+}
+
+.three ul {
+	margin-top: 15px;
+}
+
+.three h1 {
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+.three h4 {
+	margin-left: 89px;
+	font-size: 15px;
+}
+
+.three a {
+	color: #404040;
+}
+
+/* 4TH ROW */
+.quad {
+	align: center;
+}
+
+.quad input {
+	width: 100%;
+}
+
+.quad button {
+	margin: auto;
+	display: block;
+	color: teal;
+	background: white;
+	border: 1px solid teal;
+}
+
+#snd {
+	background-color: white;
+	border: 1px solid #009999;
+	color: #009999;
+}
+
+#mark_elements_blue {
+	background-color: #66B2FF;
+	border-radius: 25px;
+	color: white;
+}
+
+#mark_elements_red {
+	background-color: #66B2FF;
+	border-radius: 25px;
+	color: white;
+}
+
+#mark_elements_green {
+	background-color: #66FF66;
+	border-radius: 25px;
+	color: white;
+}
+
+#mark_elements_yellow {
+	background-color: #66B2FF;
+	border-radius: 25px;
+	color: white;
+}
+
+/* 5TH ROW */
+.penta {
+	background-color: #505050;
+	color: white;
+}
+
+.p2 {
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+
+.p2 p {
+	color: lightgray;
+}
+
+.p2 hr {
+	color: white;
+}
+
+.p2 img {
+	width: 30px;
+	height: 30px;
+}
+
+.x {
+	display: inline;
+}
+
+.p2 button {
+	background-color: #404040;
+	border: 1px solid #404040;
+}
+
+.p2 span {
+	background-color: #404040;
+	color: white;
+}
+
+.p21 {
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+
+.p21 img {
+	width: 55px;
+	height: 55px;
+}
+
+.i1 {
+	margin-left: 30px;
+}
+
+.i2 {
+	margin-left: 10px;
+}
+
+.cont {
+	background-color: teal;
+	color: white;
+	border: 1px solid teal;
+}
+
+/* 6TH ROW */
+.six {
+	background-color: #404040;
+	color: white;
+}
+
+.six p {
+	margin-left: 20px;
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+
+/* JONAH           ______________________________________*/
+
+.navbar-nav>li>.dropdown-menu {
+    transform: translate(-70%, 0);
+}
+.navbar-nav>li>.dropdown-toggle{
+    color:#000000;
+}
+.navbar-nav li .dropdown-menu .dropdown-item{
+	transition: all .2s ease-in-out;
+}
+.navbar-nav li .dropdown-menu .dropdown-item:hover{
+    color:#4fbfe8;
+    background:none;
+    transform: scale(1.02);
+}
+.custom-hr{
+	border-bottom: 1.4px solid #4fbfa8;
+	width: 100px;
+}   
+.navbar-nav{
+	margin-left:5px;
+}
+.custom1 {
+	color: #FFFFFF;
+}
+
+#breadcrumb1 {
+	background-image: url("../images/texture-bw.png");
+}
+
+.custom-font-size {
+	font-size: 0.8em;
+}
+
+.list-group-item {
+	color: #4fbfa8;
+}
+
+.btn-primary {
+	background-color: #FFFFFF;
+	color : #4fbfa8;
+	border-color: #4fbfa8;
+	
+}
+.btn-primary:hover {
+	background-color: #4fbfa8;
+	color : #FFFFFF;
+	border-color: #4fbfa8;
+	
+}
+
+.list-group-item.active {
+	background-color: #4fbfa8;
+}
+
+.custom-color {
+	color: #000000;
+}
+
+.custom-color:hover {
+	color: #000000;
+}
+
+.breadcrumb-color {
+	color: #4fbfa8;
+}
+
+.breadcrumb-color:hover {
+	color: #4fbfa8;
+}
+li .welcome-nav{
+	padding: 5%;
+} 
+.custom-caption{
+	border-left: 3px solid #4fbfa8;
+	padding:8px;
+}
+.light-font{
+	color:#666666;
+}
+.carousel-control-prev,
+.carousel-control-next {
+	width:6%;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: #999999;
+    border-radius: 50%;
+    background-image: none;
+    
+}
+
