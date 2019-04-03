@@ -26,6 +26,11 @@ public class EmployeeService {
 
 		return status;
 	}
+	public boolean updatePassword(Employee employee) {
+		boolean status = employeeDao.insertPassword(employee);
+
+		return status;
+	}
 
 	public boolean registerEmployee(Employee employee) {
 		boolean status = employeeDao.insertEmployee(employee);
@@ -51,7 +56,7 @@ public class EmployeeService {
 //CONNECT TO MAIL SERVER
 		Session session = Session.getDefaultInstance(properties, new javax.mail.Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication("soniasutradhar@gmail.com", "XXXXX");
+				return new PasswordAuthentication("soniasutradhar@gmail.com", "123sonia890");
 			}
 		});
 		try {
