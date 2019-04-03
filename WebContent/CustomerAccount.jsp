@@ -114,7 +114,7 @@
 				<div class="col-md-4">
 					<ul class="nav navbar-nav">
 						<li><h4>
-								<a href="#">HOME </a>
+								<a href="homepage.jsp">HOME </a>
 							</h4></li>
 						<li><h4>
 								<a href="#">CONTACT </a>
@@ -139,32 +139,48 @@
 
 					<!-- CHANGE PASSWORD FORM -->
 
-					<form class="container-fluid">
+					<form action="update"method="post"class="container-fluid">
 						<h3>CHANGE PASSWORD</h3>
 
 						<div class="row">
 							<div class="form-group col-md-6">
-								<label for="name">Old Passsword</label> <input type="text"
-									class="form-control" id="inputname1" placeholder="First Name">
+								<label for="name">Old Passsword</label> <input type="password"
+									class="form-control" name="f1">
 							</div>
 						</div>
 						<div class="row">
 							<div class="form-group col-md-6">
-								<label for="name">New Passsword</label> <input type="text"
-									class="form-control" id="inputname1" placeholder="First Name">
+								<label for="name">New Passsword</label> <input type="password"
+									class="form-control" name="f2">
 							</div>
 							<div class="form-group col-md-6">
-								<label for="name">Retype new password</label> <input type="text"
-									class="form-control" id="inputname2" placeholder="Last Name">
+								<label for="name">Retype new password</label> <input type="password"
+									class="form-control" name="f3">
 							</div>
 						</div>
 						<div class="form-group">
-							<button class="btn btn-primary center-block but dam">
+							<button type="submit" class="btn btn-primary center-block but dam">
 								<span class="glyphicon glyphicon-floppy-disk"> SAVE NEW
 									PASSWORD</span>
 							</button>
 						</div>
 					</form>
+					<%
+						String pwd = (String) request.getAttribute("pwd");
+
+						if (pwd != null) {
+							if (pwd.equals("S")) {
+					%>
+					<div class="alert alert-success">Password Changed successfully.</div>
+
+					<%
+						} else {
+					%>
+					<div class="alert alert-danger">Couldnt change password</div>
+					<%
+						}
+						}
+					%>
 					<hr />
 
 					<!-- PERSONAL DETAILS FORM -->
