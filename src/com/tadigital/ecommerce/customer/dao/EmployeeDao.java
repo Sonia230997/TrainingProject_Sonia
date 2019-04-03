@@ -38,6 +38,27 @@ public class EmployeeDao extends Dao {
 		
 		return status;
 	}
+	public boolean insertPassword(Employee employee) {
+		boolean status = false;
+		
+		Connection con = openConnection();
+		Statement stmt = openStatement(con);
+		
+		try {
+			String sql = "UPDATE customer_information SET cust_pwd='"+employee.getPassword()+"'"+"WHERE cust_email='"+employee.getEmail()+"'";
+			int rows = stmt.executeUpdate(sql);
+			if(rows != 0) {
+				status = true;
+			}
+		} catch (SQLException sqle) {
+			sqle.printStackTrace();
+		} finally {
+			closeStatement(stmt);
+			closeConnection(con);
+		}
+		
+		return status;
+	}
 	//METHOD FOR WHEN REGISTRATION PAGE IS ACCESSED
 	public boolean insertEmployee(Employee employee) {
 		boolean status = false;
