@@ -31,7 +31,8 @@ public class LoginProcessController extends HttpServlet {
 		EmployeeService employeeService = new EmployeeService();
 		boolean status = employeeService.loginEmployee(employee);
 		if(status) {
-			//HttpSession s=req.getSession();
+			HttpSession s=req.getSession();
+			s.setAttribute("mail", email);
 			req.setAttribute("sta","S");
 			RequestDispatcher rd = req.getRequestDispatcher("CustomerAccount.jsp");
 			rd.forward(req, res);
